@@ -42,6 +42,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      body: list[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
