@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import './example1/example1.dart';
+import './example2/example2.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  var titleArr = ["example1", "example2", "example3"];
+  var titleArr = ["example1", "example2"];
+  var pushPage = [Example1Page(), Example2Page()];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
             onTap: () {
               Navigator.push(context, 
                 MaterialPageRoute(
-                  builder: (context) => new Example1Page()
+                  builder: (context) => pushPage[index]
                 )
               );
             },
