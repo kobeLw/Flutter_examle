@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'CupertinoActivityIndicator.dart';
 import 'CupertinoAlertDialogPage.dart';
+import 'CupertinoNavigationBar.dart';
 
 class IOSComponentPage extends StatelessWidget {
-  final titleArr = ["CupertinoActivityIndicator", "CupertinoAlertDialog"];
-  final pushPage = [CupertinoActivityIndicatorPage(), CupertinoAlertDialogPage()];
+  final titleArr = ["CupertinoActivityIndicator", "CupertinoAlertDialog", "CupertinoNavigationBar"];
+  final pushPage = [CupertinoActivityIndicatorPage(), CupertinoAlertDialogPage(), CupertinoNavigationBarPage()];
 
   @override
   Widget build(BuildContext context) {
