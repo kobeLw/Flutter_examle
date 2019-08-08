@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import './example1/example1.dart';
 import './example2/example2.dart';
+import './example3/example3.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  var titleArr = ["example1", "example2"];
-  var pushPage = [Example1Page(), Example2Page()];
+  final titleArr = ["example1", "example2", "example3"];
+  final pushPage = [Example1Page(), Example2Page(), Example3Page()];
 
   @override
   Widget build(BuildContext context) {
